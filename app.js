@@ -8,7 +8,7 @@
  * URL: www.itsokayitsofficial.io
  */
 
-angular.module('stopWatchApp', [])
+var stopWatchApp = angular.module('stopWatchApp', [])
 
   .controller('stopWatchDemoCtrl', ['$scope', function ($scope) {
     $scope.stopwatches = [{

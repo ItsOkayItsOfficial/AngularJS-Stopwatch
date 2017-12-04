@@ -11,12 +11,16 @@
 
   <title>Alex P | AngularJS Stopwatch</title>
 
+    <!-- Angular Js 1x -->
+    <script src="//code.angularjs.org/1.2.3/angular.js"></script>
+    <script src="app.js"></script>
+
   <!-- Custom CSS -->
   <link href="../../assets/css/style.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body ng-app="stopWatchApp">
 
   <!-- Sitnav -->
   <nav id="site-nav" class="navbar nav-top">
@@ -46,7 +50,7 @@
   <section id="stopwatch">
     <div class="row">
 
-      <div ng-app="stopWatchApp" ng-controller="stopWatchDemoCtrl">
+      <div ng-controller="stopWatchDemoCtrl">
 
         <div ng-repeat="options in stopwatches">
           <div bb-stopwatch options="options">
@@ -71,16 +75,8 @@
   </section> -->
   <!-- /#stopwatch
 
-  <!-- Angular Js 1x -->
-  <script src="https://code.angularjs.org/1.2.3/angular.js"></script>
-  <script src="app.js"></script>
-
   <!-- Custom Js -->
   <script src="../../assets/js/custom.js"></script>
-
-  <!-- Stopwatch Script -->
-  <script id="stopwatch.html" type="text/ng-template">
-  </script>
 
 </body>
 
